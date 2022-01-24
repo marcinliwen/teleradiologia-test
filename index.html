@@ -11,7 +11,7 @@
       data-href="styles.819895522084753a23be.css"
       data-identity="gatsby-global-css"
     >
-      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap);
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap);
       :root {
         --color-red: #c33;
         --dark-background: #2a4455;
@@ -45,21 +45,21 @@
         height: 65px;
       }
       h1 {
-        line-height: 2rem;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
         margin-top: 0;
       }
-      .hero .hero-title,
-      h1 {
-        font-size: 1.5rem;
-        margin-bottom: 0;
+      h1>span{
+        font-size: 32px;
+        font-weight: 300;
       }
       .hero .hero-title {
-        line-height: 2.2rem;
-      }
-      .hero .hero-container p {
-        margin-bottom: 3rem;
-        padding-right: 30px;
-        font-weight: 700;
+        line-height: 18px;
+        font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 0;
       }
       h2 {
         font-size: 1.25rem;
@@ -77,7 +77,7 @@
         width: 100%;
       }
       .wrapper {
-        padding: 0 10px;
+        padding: 0 20px;
       }
       #___gatsby,
       #gatsby-focus-wrapper,
@@ -95,6 +95,7 @@
       .hero {
         padding: 60px 0;
         position: relative;
+        background: linear-gradient(90deg, #39A2D1 0%, #74E2FB 30.14%, #75E3FC 38.48%, #38A1D1 100%);
       }
       .thank-you .hero {
         align-items: center;
@@ -104,6 +105,8 @@
       .img-logo {
         margin-top: -100%;
         max-width: 250px;
+        position: relative;
+    z-index: 1;
       }
       .img-logo,
       .img-logo.moveLogo {
@@ -191,7 +194,7 @@
         background: #366;
       }
       .hero-container {
-        align-items: center;
+        align-items: flex-start;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -220,31 +223,39 @@
         margin-top: 0;
       }
       .table {
-        background: #e5eaee;
-        border-radius: 20px;
       }
       .table-header {
-        background: #2a4455;
-        border-radius: 20px 20px 0 0;
-        color: #fff;
-        font-weight: 700;
+        background: #2ba0d2;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 3px;
       }
+      
       .table-body {
-        color: #3d7088;
-        padding: 25px 0;
-      }
+    color: #fff;
+    padding: 18px 24px;
+    background: #143251;
+    font-size: 16px;
+    font-weight: 300;
+}
+      .table-body>div:nth-child(1) {
+    margin-bottom: 28px;
+}
       .table-body span:nth-child(2n) {
         font-weight: 700;
       }
       .table-body span {
         padding: 4px 8px;
       }
+      
       .table-header span {
-        display: block;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-        padding: 25px;
-      }
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    text-align: center;
+    font-weight: 300;
+}
       .pricebox-wrapper img {
         display: block;
         margin: auto;
@@ -259,22 +270,71 @@
         margin: 0;
         padding: 0 40px;
       }
-      .section {
-        padding: 50px 0 0;
-      }
       .section ul {
-        padding-right: 15px;
+        list-style: none;
+    padding-left: 0;
+    margin: 0;
       }
+      .full-width {
+    width: 100%;
+background: linear-gradient(180deg, #CE0000 0%, #950000 100%);
+    border-radius: 16px;
+    color: #fff;
+    padding: 22px 33px;
+    margin-top: 45px;
+}
+.full-width >span:nth-child(1){
+  font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    display: block;
+}
+.full-width>span:nth-child(2){
+  font-size: 24px;
+    line-height: 32px;
+    margin-top: 16px;
+    font-weight: 700;
+    display: block;
+}
+.section ul li:not(:last-child) {
+    margin-bottom: 28px;
+}
+section.section {
+    padding-bottom: 50px;
+    background: #f4f4f4;
+}
+.price-box h2 {
+  font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 32px;
+    margin: 55px 0 45px;
+}
+
+.price-box h2 span {
+  display: block;
+    font-size: 24px;
+    font-weight: 300;
+}
+.section h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 40px 0 50px;
+}
       @media (min-width: 770px) {
         .img-logo {
           max-width: 308px;
         }
         .hero {
-          padding: 60px 0;
+          padding: 85px 0 45px;
+        }
+        .hero .hero-title{
+          font-size: 20px;
         }
         .form-box {
           margin-left: auto;
-          margin-top: 3rem;
         }
         .form-item {
           flex-wrap: nowrap;
@@ -282,29 +342,64 @@
         input {
           width: calc(100% - 80px);
         }
-        h1 {
-          font-size: 3rem;
-          line-height: 3.5rem;
-          margin-bottom: 1rem;
-          margin-top: 0;
+        h1{
+          font-size: 42px;
+        line-height: 58px;
         }
+        h1>span{
+        font-size: 48px;
+      }
         h2 {
           font-size: 1.5rem;
           line-height: 2rem;
         }
-        .hero .hero-title {
-          font-size: 2rem;
-        }
         .hero-container > div {
           flex: 1 1;
         }
-        .hero p {
-          font-size: 1.5rem;
-          line-height: 2rem;
-        }
+        
         .form-box img{
             width: 410px
         }
+        .section ul {
+ 
+    column-count: 2;
+    column-gap: 60px;
+}
+.full-width{
+  padding: 44px 66px;
+}
+.full-width >span:nth-child(1){
+  font-size: 32px;
+    line-height: 38px;
+}
+.full-width>span:nth-child(2){
+  font-size: 44px;
+    line-height: 48px;
+}
+.section h2 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
+    margin: 40px 0 50px;
+}
+.price-box h2 {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.price-box h2 span {
+    font-size: 28px;
+}
+.table-body {
+    padding: 28px 32px;
+    font-size: 16px;
+      }
+      .table-header span {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 8px 16px;
+      }
       }
     </style>
     <meta name="generator" content="Gatsby 4.4.0" />
@@ -525,15 +620,12 @@
           <section class="hero">
             <div class="container hero-content">
               <div class="wrapper">
-                <p class="hero-title">Teleradiologia</p>
-                <h1>ZDALNE OPISYWANIE CYFROWYCH ZDJĘĆ STOMATOLOGICZNYCH</h1>
+               
                 <div class="hero-container">
                   <div>
-                    <p>
-                      Nie musisz zatrudniać radiologa do opisu zdjęć. Skorzystaj
-                      z usług zdalnej teleradiologii! Bądź profesjonalny i
-                      wyprzedź konkurencję!
-                    </p>
+                    <p class="hero-title">Teleradiologia</p>
+                    <h1>Zdalne opisywanie <span>cyfrowych zdjęć stomoatologicznych</span></h1>
+                    
                   </div>
                   <div>
                     <!--<div class="form-box">
@@ -598,82 +690,18 @@
                     </div>-->
                     <div class="form-box">
                         <script type="text/javascript" src="https://app.getresponse.com/view_webform_v2.js?u=MffZX&webforms_id=GGVXX" data-webform-id="GGVXX"></script>
-                    <img
-                    src="data:image/webp;base64,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"
-                  /> 
+                   
                   </div>
+                
+                
+                </div>
+                <div class="full-width">
+                 <span>
+                    Nie musisz zatrudniać radiologa do opisu zdjęć.</span><span>Skorzystaj
+                      z usług zdalnej teleradiologii!</span> 
                 </div>
                 </div>
-                <h2>
-                    Cena za opis badania stomatologicznego w systemie
-                    teleradiologii już <strong>od 16 zł</strong> za zdjęcie.
-                  </h2>
-              </div>
-            </div>
-            <div class="hero-img">
-              <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper">
-                <div aria-hidden="true" style="padding-top: 56.25%"></div>
-                <div
-                  aria-hidden="true"
-                  data-placeholder-image=""
-                  style="
-                    opacity: 1;
-                    transition: opacity 500ms linear;
-                    background-color: #e8f8f8;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                  "
-                ></div>
-                <picture
-                    >
-                    <source
-                      media="(max-width: 415px)"
-                      srcset="
-                        static/7eae5a8840f0ba24c0eb2a371fb53201/aa9f2/dental-mobile.png 375w
-                      "
-                      sizes="100vw" />
-                    
-                    <img
-                      data-gatsby-image-ssr=""
-                      data-main-image=""
-                      style="opacity: 1"
-                      sizes="100vw"
-                      decoding="async"
-                      src="static/7f98345b02f266e1889cb37c5a4fd6a2/e018d/dental-desktop.png"
-                      srcset="
-                        static/7f98345b02f266e1889cb37c5a4fd6a2/0c057/dental-desktop.png  750w,
-                        static/7f98345b02f266e1889cb37c5a4fd6a2/900d9/dental-desktop.png 1080w,
-                        static/7f98345b02f266e1889cb37c5a4fd6a2/35942/dental-desktop.png 1366w,
-                        static/7f98345b02f266e1889cb37c5a4fd6a2/e018d/dental-desktop.png 1920w
-                      "
-                      alt="radiology" /></picture
-                >
-                <script type="module">
-                  const t =
-                    "undefined" != typeof HTMLImageElement &&
-                    "loading" in HTMLImageElement.prototype;
-                  if (t) {
-                    const t = document.querySelectorAll("img[data-main-image]");
-                    for (let e of t) {
-                      e.dataset.src &&
-                        (e.setAttribute("src", e.dataset.src),
-                        e.removeAttribute("data-src")),
-                        e.dataset.srcset &&
-                          (e.setAttribute("srcset", e.dataset.srcset),
-                          e.removeAttribute("data-srcset"));
-                      const t = e.parentNode.querySelectorAll(
-                        "source[data-srcset]"
-                      );
-                      for (let e of t)
-                        e.setAttribute("srcset", e.dataset.srcset),
-                          e.removeAttribute("data-srcset");
-                      e.complete && (e.style.opacity = 1);
-                    }
-                  }
-                </script>
+               
               </div>
             </div>
           </section>
@@ -682,29 +710,29 @@
               <div class="wrapper">
                 
                 <h2>
-                  Korzyści które uzyskasz z wdrożenia modułu Teleradiologii:
+                  Korzyści które uzyskasz z wdrożenia modułu <span style="font-weight: 300;">Teleradiologia24</span>
                 </h2>
                 <ul>
-                  <li>
+                  <li><strong>1.</strong>
                     Przygotujemy dla Ciebie wszystkie dokumenty do WSSE wymagane
                     przepisami prawa (procedury szczegółowe, dokumenty
                     uprawniające do opisu zdjęć, test specjalistyczne urządzeń
                     peryferyjnych).
                   </li>
-                  <li>
+                  <li><strong>2.</strong>
                     Otrzymasz dostęp do aplikacji szyfrowanego przesyłania zdjęć
                     w formacie DICOM.
                   </li>
-                  <li>
+                  <li><strong>3.</strong>
                     Spełnisz wymogi prawa w zakresie posiadania umowy z lekarzem
                     radiologiem w obszarze oceny radiologicznej wykonywanych
                     badań obrazowych.
                   </li>
-                  <li>
+                  <li><strong>4.</strong>
                     Uzyskasz możliwość wysłania i konsultacji wykonanego badania
                     z lekarzem radiologiem bezpośrednio w systemie.
                   </li>
-                  <li>
+                  <li><strong>5.</strong>
                     Będziesz mieć możliwość tworzenia kont dla podmiotów z Tobą
                     współpracujących / lekarzy kierujących pacjentów na
                     diagnostykę obrazową stomatologiczną (funkcja systemu RIS
@@ -712,12 +740,12 @@
                     placówki wykonującej badanie radiologiczne wraz ze zwrotnym
                     odesłaniem wykonanych obrazów w czasie rzeczywistym);
                   </li>
-                  <li>
+                  <li><strong>6.</strong>
                     Możliwość archiwizacji wykonywanych badań w systemie PACS
                     stanowiącym integralną część modułu teleradiologicznego
                     (brak konieczności posiadania własnych serwerów).
                   </li>
-                  <li>
+                  <li><strong>7.</strong>
                     Możliwość zarządzania wszystkimi pacjentami oraz wykonanymi
                     badaniami obrazowymi dzięki funkcji systemu RIS.
                   </li>
@@ -731,52 +759,51 @@
                 <div class="pricebox-wrapper">
                   <div class="price-box">
                     <h2>
-                      Preferencyjne ceny Teleragiologii dla Klientów POZYTRON
-                      Radiologia Medyczna:
+                      Preferencyjne ceny Teleragiologii 
+                      <span>dla Klientów POZYTRON
+                        Radiologia Medyczna:</span>
                     </h2>
                     <div class="table">
                       <div class="table-header">
                         <span>Moduł teleradiologii - dostęp dla podmiotu</span>
                       </div>
                       <div class="table-body">
-                        <ul>
-                          <li>
-                            Przygotowanie dokumentów do WSSE (procedury
-                            szczegółowe, uprawnienia do opisywania zdjęć, testy
-                            specjalistyczne urządzeń peryferyjnych)
-                            <ul>
-                              <li>
-                                Dostęp do modułu dla współpracujących jednostek
-                              </li>
-                              <li>Radiologiczna gotowość dyżurowa</li>
-                              <li>
-                                Dostęp do funkcji RIS w module
-                                teleradiologicznym
-                              </li>
-                              <li>Archiwizacja wykonywanych badań</li>
-                            </ul>
-                          </li>
-                          <li>
-                            Wsparci ekoordynatora badań w teleradiologii w godz.
-                            8:00 - 16:00
+                        <div>
+                          <strong>Przygotowanie dokumentów do WSSE </strong>(procedury
+                          szczegółowe, uprawnienia do opisywania zdjęć, testy
+                          specjalistyczne urządzeń peryferyjnych)
+                          <ul>
+                            <li>
+                              Dostęp do modułu dla współpracujących jednostek
+                            </li>
+                            <li>Radiologiczna gotowość dyżurowa</li>
+                            <li>
+                              Dostęp do funkcji RIS w module
+                              teleradiologicznym
+                            </li>
+                            <li>Archiwizacja wykonywanych badań</li>
+                          </ul>
+                        
+                        </div>
+                           
+                          <div> 
+                            <strong>Wsparci ekoordynatora badań w teleradiologii w godz.
+                              8:00 - 16:00</strong>
                             <ul>
                               <li>Wsparcie IT w godz. 8:00 - 16:00</li>
                               <li>Serwis oraz aktualizacja modułu</li>
-                            </ul>
-                          </li>
-                        </ul>
+                            </ul></div>
+                           
+                          
                       </div>
                     </div>
                   </div>
-                  <img
-                    src="data:image/webp;base64,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"
-                  />
-                  
+                 
                 </div>
               </div>
             </div>
           </section>
-          <footer class="background-gradient">
+          <footer >
             <div class="container"><div class="wrapper"></div></div>
           </footer>
         </main>
