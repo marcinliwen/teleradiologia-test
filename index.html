@@ -53,6 +53,7 @@
       h1>span{
         font-size: 32px;
         font-weight: 300;
+        display: block;
       }
       .hero .hero-title {
         line-height: 18px;
@@ -276,7 +277,7 @@
     margin: 0;
       }
       .full-width {
-    width: 100%;
+    
 background: linear-gradient(180deg, #CE0000 0%, #950000 100%);
     border-radius: 16px;
     color: #fff;
@@ -323,6 +324,9 @@ section.section {
     font-weight: 700;
     margin: 40px 0 50px;
 }
+.banner{
+  margin-bottom: 30px;
+}
       @media (min-width: 770px) {
         .img-logo {
           max-width: 308px;
@@ -366,7 +370,8 @@ section.section {
     column-gap: 60px;
 }
 .full-width{
-  padding: 44px 66px;
+  width: 100%;
+  padding: 44px 60px;
 }
 .full-width >span:nth-child(1){
   font-size: 32px;
@@ -555,7 +560,7 @@ section.section {
                     alt=""
                     role="presentation"
                     aria-hidden="true"
-                    src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;123&#x27; width=&#x27;308&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E"
+                    src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;100&#x27; width=&#x27;300&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E"
                     style="max-width: 100%; display: block; position: static"
                   />
                 </div>
@@ -579,13 +584,12 @@ section.section {
                     style="opacity: 1"
                     sizes="(min-width: 308px) 308px, 100vw"
                     decoding="async"
-                    loading="lazy"
-                    src="static/ef2df212d14505f1edea427adad37b17/3099a/logo.webp"
-                    srcset="
-                      static/ef2df212d14505f1edea427adad37b17/2c413/logo.webp  77w,
-                      static/ef2df212d14505f1edea427adad37b17/20430/logo.webp 154w,
-                      static/ef2df212d14505f1edea427adad37b17/3099a/logo.webp 308w
-                    "
+                    src="static/b1c96998d785b1e1bd176198f085f77a/912d0/logo.png"
+                        srcset="
+                          static/b1c96998d785b1e1bd176198f085f77a/6a54f/logo.png  75w,
+                          static/b1c96998d785b1e1bd176198f085f77a/a177f/logo.png 150w,
+                          static/b1c96998d785b1e1bd176198f085f77a/912d0/logo.png 300w
+                        "
                     alt="logo"
                 />
                 <script type="module">
@@ -625,7 +629,77 @@ section.section {
                   <div>
                     <p class="hero-title">Teleradiologia</p>
                     <h1>Zdalne opisywanie <span>cyfrowych zdjęć stomoatologicznych</span></h1>
-                    
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained banner"
+                    >
+                      <div style="max-width: 420px; display: block">
+                        <img
+                          alt=""
+                          role="presentation"
+                          aria-hidden="true"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;205&#x27; width=&#x27;420&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E"
+                          style="
+                            max-width: 100%;
+                            display: block;
+                            position: static;
+                          "
+                        />
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="
+                          opacity: 1;
+                          transition: opacity 500ms linear;
+                          background-color: #88a8c8;
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          bottom: 0;
+                          right: 0;
+                          border-radius: 16px;
+                        "
+                      ></div>
+                      
+                          <img
+                            data-gatsby-image-ssr=""
+                            data-main-image=""
+                            style="opacity: 0"
+                            sizes="(min-width: 420px) 420px, 100vw"
+                            decoding="async"
+                            src="static/dcfc1de6d991c7982fa2389588aedcd5/0506a/baner-teleradiologia.png"
+                            srcset="
+                              static/dcfc1de6d991c7982fa2389588aedcd5/9990c/baner-teleradiologia.png 105w,
+                              static/dcfc1de6d991c7982fa2389588aedcd5/0fcd5/baner-teleradiologia.png 210w,
+                              static/dcfc1de6d991c7982fa2389588aedcd5/0506a/baner-teleradiologia.png 420w
+                            "
+                            alt="Zdjęcie rentgenowskie szczęki" />
+                            </div>
+                      <script type="module">
+                        const t =
+                          "undefined" != typeof HTMLImageElement &&
+                          "loading" in HTMLImageElement.prototype;
+                        if (t) {
+                          const t = document.querySelectorAll(
+                            "img[data-main-image]"
+                          );
+                          for (let e of t) {
+                            e.dataset.src &&
+                              (e.setAttribute("src", e.dataset.src),
+                              e.removeAttribute("data-src")),
+                              e.dataset.srcset &&
+                                (e.setAttribute("srcset", e.dataset.srcset),
+                                e.removeAttribute("data-srcset"));
+                            const t = e.parentNode.querySelectorAll(
+                              "source[data-srcset]"
+                            );
+                            for (let e of t)
+                              e.setAttribute("srcset", e.dataset.srcset),
+                                e.removeAttribute("data-srcset");
+                            e.complete && (e.style.opacity = 1);
+                          }
+                        }
+                      </script>
                   </div>
                   <div>
                     <!--<div class="form-box">
