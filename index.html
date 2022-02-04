@@ -512,6 +512,7 @@ section.section .wrapper{
         document.body.addEventListener(
           "load",
           function (e) {
+            alert('one');
             if (void 0 === e.target.dataset.mainImage) return;
             if (void 0 === e.target.dataset.gatsbyImageSsr) return;
             const t = e.target;
@@ -623,7 +624,8 @@ section.section .wrapper{
                                 srcSet="static/f16ea49ebe2d574c9110a965769aa442/6a54f/logo.png 75w,static/f16ea49ebe2d574c9110a965769aa442/a177f/logo.png 150w,static/f16ea49ebe2d574c9110a965769aa442/912d0/logo.png 300w"
                                 alt="logo" /></noscript>
                         <script
-                            type="module" crossorigin="use-credentials">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype; if (t) { const t = document.querySelectorAll("img[data-main-image]"); for (let e of t) { e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset")); const t = e.parentNode.querySelectorAll("source[data-srcset]"); for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"); e.complete && (e.style.opacity = 1) } }</script>
+                            type="module" crossorigin="use-credentials">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype; if (t) {alert('two'); const t = document.querySelectorAll("img[data-main-image]"); for (let e of t) { e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset")); const t = e.parentNode.querySelectorAll("source[data-srcset]"); for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"); e.complete && (e.style.opacity = 1) } }</script>
+                    <script>alert('three');</script>
                     </div>
                       </div>
                   </div>
