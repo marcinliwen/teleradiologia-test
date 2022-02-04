@@ -615,18 +615,16 @@ section.section .wrapper{
                         <div aria-hidden="true" data-placeholder-image=""
                             style="opacity:1;transition:opacity 500ms linear;background-color:#f8f8f8;position:absolute;top:0;left:0;bottom:0;right:0">
                         </div><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
-                            sizes="(min-width: 300px) 300px, 100vw" decoding="async" loading="lazy"
+                            sizes="(min-width: 300px) 300px, 100vw" decoding="async" 
                             data-src="static/f16ea49ebe2d574c9110a965769aa442/912d0/logo.png"
                             data-srcset="static/f16ea49ebe2d574c9110a965769aa442/6a54f/logo.png 75w,static/f16ea49ebe2d574c9110a965769aa442/a177f/logo.png 150w,static/f16ea49ebe2d574c9110a965769aa442/912d0/logo.png 300w"
                             alt="logo" /><noscript><img data-gatsby-image-ssr="" data-main-image=""
                                 style="opacity:0" sizes="(min-width: 300px) 300px, 100vw" decoding="async"
-                                loading="lazy" src="static/f16ea49ebe2d574c9110a965769aa442/912d0/logo.png"
+                                 src="static/f16ea49ebe2d574c9110a965769aa442/912d0/logo.png"
                                 srcSet="static/f16ea49ebe2d574c9110a965769aa442/6a54f/logo.png 75w,static/f16ea49ebe2d574c9110a965769aa442/a177f/logo.png 150w,static/f16ea49ebe2d574c9110a965769aa442/912d0/logo.png 300w"
                                 alt="logo" /></noscript>
-                        <script>const t = "undefined" != typeof HTMLImageElement /* && "loading" in HTMLImageElement.prototype */; t &&
-                          document.body.addEventListener(
-                            "load",function() {alert('two'); const t = document.querySelectorAll("img[data-main-image]"); for (let e of t) { e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset")); const t = e.parentNode.querySelectorAll("source[data-srcset]"); for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"); e.complete && (e.style.opacity = 1) } })</script>
-                    <script>alert('three')</script>
+                        <script>const t = "undefined" != typeof HTMLImageElement /* && "loading" in HTMLImageElement.prototype */; if (t) {alert('two'); const t = document.querySelectorAll("img[data-main-image]"); for (let e of t) { e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset")); const t = e.parentNode.querySelectorAll("source[data-srcset]"); for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"); e.complete && (e.style.opacity = 1) } }</script>
+                    <script>alert('three');</script>
                     </div>
                       </div>
                   </div>
